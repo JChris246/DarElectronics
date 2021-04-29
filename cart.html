@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>DAR Electronics - Cart</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" type="image/png" href="imgs/d-logo.png">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <!--Bootstrap-->
+
+        <!-- custom-->
+        <link rel="stylesheet" href="main.css" />
+        <!-- custom-->
+
+    </head>
+
+    <body>
+         <!-- Navigation -->
+         <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid nav">
+                <a href="index.html" class="no_style navbar-brand"><h1 class="logo"><span class="prim_blue">Dar</span>Electronics</h1></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto" id="nav_links">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item" id="contactBtn"><a class="nav-link"><i class="fa fa-phone orient"></i></a></li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <input id="searchInput" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" readonly>
+                        <button id="searchbtn" class="btn btn-outline-success my-2 my-sm-0 prim_blue_bg"
+                            type="button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                
+            </div>
+        </nav>
+        <!-- End Navigation -->
+        <div class="container-fluid padding banner">
+            <div class="row padding text-center prim_blue_bg text-white">
+                <div class="col-12">
+                    <h1 class="text-center banner">Cart</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="center subtotal">
+            <span class="subtotal">Subtotal (5 items): </span><span class="money">$3,218.23</span>
+            <span class="radiospace"><div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                  checked
+                />
+                <label class="form-check-label" for="inlineRadio1">Delivery</label>
+              </div></span>
+              <span><div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1">In-Store Pickup</label>
+              </div></span>
+            <button class="checkout prim_blue_bg">Proceed to Checkout</button>
+        </div>
+
+        <div class="center">
+            <img src="imgs/71dqjxW8g5L._AC_SL1500_.jpg" class="product_image_cart">
+            <div>
+                <h1 class="product_name">Lenovo IdeaPad 3 14" Laptop, 14.0" FHD 1920 x 1080 Display, AMD Ryzen 5 3500U Processor, 8GB DDR4 RAM, 256GB SSD, AMD Radeon Vega 8 Graphics, Narrow Bezel, Windows 10, 81W0003QUS, Abyss Blue</h1>
+                <div class="product_details_cart">
+                    <span class="money">Price: $425.80</span>
+                    <div class="quantity">
+                        <span class="quantity_label">Quantity: </span>
+                        <select class="quantity_select" name="qty" disabled>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separate_cart"/>
+
+            <img src="imgs/tvcart.jpg" class="product_image_cart">
+            <div>
+                <h1 class="product_name">
+                    SAMSUNG 55-Inch Class Crystal UHD TU-8000 Series - 4K UHD HDR Smart TV with Alexa Built-in (UN55TU8000FXZA, 2020 Model)</h1>
+                <div class="product_details_cart">
+                    <span class="money">Price: $1079.98</span>
+                    <div class="quantity">
+                        <span class="quantity_label">Quantity: </span>
+                        <select class="quantity_select" name="qty" disabled>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separate_cart"/>
+
+            <img src="imgs/tabletcart.jpg" class="product_image_cart">
+            <div>
+                <h1 class="product_name">Tablet 10 Inch Android 9.0 3G Phone Tablets with 32GB Storage Dual Sim Card 5MP Camera, WiFi, Bluetooth, GPS, Quad Core, HD Touchscreen, Support 3G Phone Call (Black)</h1>
+                <div class="product_details_cart">
+                    <span class="money">Price: $223.56</span>
+                    <div class="quantity">
+                        <span class="quantity_label">Quantity: </span>
+                        <select class="quantity_select" name="qty" disabled>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="separate_cart"/>
+            
+            <img src="imgs/headcart.jpg" class="product_image_cart">
+            <div>
+                <h1 class="product_name">Razer Kraken Gaming Headset: Lightweight Aluminum Frame, Retractable Noise Isolating Microphone, For PC, PS4, PS5, Switch, Xbox One, Xbox Series X & S, Mobile, 3.5 mm Audio Jack – Green</h1>
+                <div class="product_details_cart">
+                    <span class="money">Price: $425.80</span>
+                    <div class="quantity">
+                        <span class="quantity_label">Quantity: </span>
+                        <select class="quantity_select" name="qty" disabled>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr class="separate_cart"/>
+            
+            <img src="imgs/pccart.jpg" class="product_image_cart">
+            <div>
+                <h1 class="product_name">iBUYPOWER Gaming PC Computer Desktop Element Mini 9300 (AMD Ryzen 3 3100 3.6GHz, AMD Radeon RX 550 2GB, 8GB DDR4 RAM, 240GB SSD, Wi-Fi Ready, Windows 10 Home)</h1>
+                <div class="product_details_cart">
+                    <span class="money">Price: $1600.80</span>
+                    <div class="quantity">
+                        <span class="quantity_label">Quantity: </span>
+                        <select class="quantity_select" name="qty" disabled>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr class="separate_cart"/>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link">Previous</a></li>
+                    <li class="page-item active"><a class="page-link">1</a></li>
+                    <li class="page-item"><a class="page-link">2</a></li>
+                    <li class="page-item"><a class="page-link">3</a></li>
+                    <li class="page-item"><a class="page-link">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+        <footer>
+            <div class="container-fluid padding text-white">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Contact Us</h5>
+                        <hr class="light">
+                        <p>246-494-4993</p>
+                        <p>darelectronics@email.com</p>
+                        <p>Bridgetown, Barbados</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Opening Hours</h5>
+                        <hr class="light">
+                        <p>Monday - Friday: 8am - 5pm</p>
+                        <p>Saturday: Closed</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Locations</h5>
+                        <hr class="light">
+                        <p>Sheraton Mall</p>
+                        <p>Sky Mall</p>
+                        <p>Limegrove</p>
+                    </div>
+                    <div class="col-12">
+                        <hr class="light">
+                        <h5>© DarElectronics 2021</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--- End Footer -->
+        <div id="contactModal" class="modal">
+            <div class="modalContent">
+                <header class="modal_header prim_blue_bg">
+                    <div class="modal_title">contact us today</div><div id="closeBtn">&times;</span>
+                </header>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter your name" readonly/>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" iname="email" aria-describedby="emailHelp" placeholder="Enter email" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Number</label>
+                        <input type="tel" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter your number" readonly/>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Question</label>
+                        <textarea class="form-control" name="message" rows="3" readonly></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary prim_blue_bg">Submit</button>
+                </form>
+                <footer class="prim_blue_bg modal_footer"></footer>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

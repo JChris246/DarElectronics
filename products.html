@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DAR Electronics - Products</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="imgs/d-logo.png">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--Bootstrap-->
+
+    <!-- custom-->
+    <link rel="stylesheet" href="main.css" />
+    <!-- custom-->
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid nav">
+            <a href="index.html" class="no_style navbar-brand">
+                <h1 class="logo"><span class="prim_blue">Dar</span>Electronics</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto" id="nav_links">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item" id="contactBtn"><a class="nav-link"><i class="fa fa-phone orient"></i></a></li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input id="searchInput" class="form-control mr-sm-2" type="text" placeholder="Search"
+                        aria-label="Search" readonly>
+                    <button id="searchbtn" class="btn btn-outline-success my-2 my-sm-0 prim_blue_bg" type="button"><i
+                            class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navigation -->
+    <div class="container-fluid padding banner">
+        <div class="row padding text-center prim_blue_bg text-white">
+            <div class="col-12">
+                <h1 class="text-center banner">Products</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 text-center catcolour">
+            <!-- The sidebar -->
+            <div class="sidebar">
+                <h4>Categories</h4>
+                <a href="#" class="active" name="all">All<span class="badge">40</span></a>
+                <a href="#" name="laptops">Laptops<span class="badge">20</span></a>
+                <a href="#" name="phones">Phones<span class="badge">5</span></a>
+                <a href="#" name="tvs">TVs<span class="badge">1</span></a>
+                <a href="#" name="tablets">Tablets<span class="badge">5</span></a>
+                <a href="#" name="headphones">Headphones<span class="badge">3</span></a>
+                <a href="#" name="cables">Cables<span class="badge">1</span></a>
+                <a href="#" name="misc">Misc.<span class="badge">5</span></a>                
+            </div>
+        </div>
+        <div class="col-md-10 padtop" id="results">
+            <div id="sort">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-primary dropdown-toggle  ml-5 mt-3" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Sort
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">By Price</a>
+                        <a class="dropdown-item" href="#">By Category</a>
+                        <a class="dropdown-item" href="#">By Avaliablity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center pr-4">
+                <div class="col pl-md-5" style="max-height: 1px;">
+                    <div class="card product_item">
+                        <img src="imgs/laptop.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h4>DAR GTX x360 Gaming Laptop</h4>
+                            </a>
+                            <h5>$1400.00</h5>
+                            <p class="alert-success">AVAILABLE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pl-md-5">
+                    <div class="card product_item">
+                        <img src="imgs/hphones.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h4>Beats Wireless Headphones </h4>
+                            </a>
+                            <h5>$250.00</h5>
+                            <p class="alert-danger">UNAVAILABLE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pl-md-5">
+                    <div class="card product_item">
+                        <img src="imgs/tvprod.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h4>Insignia 32-inch Smart HD TV</h4>
+                            </a>
+                            <h5>$2500.00</h5>
+                            <p class="alert-success">AVAILABLE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example" id="pagination">
+                <ul class="pagination product_pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="newscol rowheight newsletter_container">
+        <div class="row">
+            <div class="col-md-8 px-5">
+                <h1 class="subscribe">subscribe to our newsletter</h1>
+                <p>Sign up with your email address to receive exclusive discounts, exciting announcements and new
+                    product sneak previews.</p>
+            </div>
+            <div class="col-md-4 newsletter_form">
+                <div class="row pb-3">
+                    <input type="email" class="form-control" placeholder="Enter your email" name="email" class ="newsinput" readonly>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary btn-block" type="submit">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid padding text-white">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Contact Us</h5>
+                    <hr class="light">
+                    <p>246-494-4993</p>
+                    <p>darelectronics@email.com</p>
+                    <p>Bridgetown, Barbados</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Opening Hours</h5>
+                    <hr class="light">
+                    <p>Monday - Friday: 8am - 5pm</p>
+                    <p>Saturday: Closed</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Locations</h5>
+                    <hr class="light">
+                    <p>Sheraton Mall</p>
+                    <p>Sky Mall</p>
+                    <p>Limegrove</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light">
+                    <h5>© DarElectronics 2021</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--- End Footer -->
+    <div id="contactModal" class="modal">
+        <div class="modalContent">
+            <header class="modal_header prim_blue_bg">
+                <div class="modal_title">contact us today</div>
+                <div id="closeBtn">&times;</span>
+            </header>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" aria-describedby="emailHelp"
+                        placeholder="Enter your name" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" iname="email" aria-describedby="emailHelp"
+                        placeholder="Enter email" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="name">Number</label>
+                    <input type="tel" class="form-control" name="name" aria-describedby="emailHelp"
+                        placeholder="Enter your number" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Question</label>
+                    <textarea class="form-control" name="message" rows="3" readonly></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary prim_blue_bg">Submit</button>
+            </form>
+            <footer class="prim_blue_bg modal_footer"></footer>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/productsControl.js"></script>
+    <script>
+        Array.from(document.querySelectorAll("div.sidebar a")).forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                Array.from(document.querySelectorAll("div.sidebar a")).forEach(a => a.classList.remove("active"));
+                if (link.name != "all")
+                    displayCat(link.name);
+                else displayRandomAll();
+                link.classList.add("active");
+            });
+        });
+        let cat = localStorage.getItem("category");
+        if (cat) {
+            document.querySelectorAll("div.sidebar a[name=" + cat + "]")[0].click();
+            localStorage.removeItem("category");
+        } else displayRandomAll();
+    </script>
+</body>
+
+</html>
